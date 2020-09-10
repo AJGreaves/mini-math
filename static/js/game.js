@@ -36,11 +36,27 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
 
+/**
+ * Function checks if the answer provided by the
+ * user is correct
+ */
 function checkAnswer() {
     let answer = document.getElementById('answer').value;
-    if (num1 + num2 == answer){
-        console.log("correct!");
+
+    if (isNaN(answer)) {
+        document.getElementById('error-msg').innerHTML = "Please enter a number";
+    } else if (num1 + num2 == answer){
+        document.getElementById('error-msg').innerHTML = "Correct!";
     } else {
-        console.log("incorrect!");
+        document.getElementById('error-msg').innerHTML = "Incorrect!";
+    }
+}
+
+function checkIfAnswerIsNum(answer) {
+    if (isNaN(answer)) {
+        document.getElementById('error-msg').innerHTML = "Please enter a number";
+        return false;
+    } else {
+        return true;
     }
 }

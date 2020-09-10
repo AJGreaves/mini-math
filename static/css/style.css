@@ -17,6 +17,7 @@ button {
 #answer-box {
     margin-top: 4rem;
     font-size: 3.5rem;
+    text-align: center;
 }
 
 #answer {
