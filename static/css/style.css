@@ -1,0 +1,11 @@
+.fas {
+    font-size: 5rem;
+}
+
+button {
+    width: 140px;
+    padding: 1rem;
+    margin: 1rem;
+    background: transparent;
+    border: none;
+}
