@@ -1,3 +1,7 @@
+/* Define global variables */
+let num1;
+let num2;
+
 /**
  * Function for when addition mode is selected by the user.
  * Loads numbers into answer window
@@ -15,8 +19,8 @@ document.getElementById('submit-btn').addEventListener('click', checkAnswer);
  * Function loads two random numbers into the answer box
  */
 function loadRandomNumbers() {
-    let num1 = getRandomInt(20);
-    let num2 = getRandomInt(20);
+    num1 = getRandomInt(20);
+    num2 = getRandomInt(20);
     
     document.getElementById('first-num').innerHTML = num1;
     document.getElementById('second-num').innerHTML = num2;
@@ -34,5 +38,9 @@ function getRandomInt(max) {
 
 function checkAnswer() {
     let answer = document.getElementById('answer').value;
-    console.log(answer);
+    if (num1 + num2 == answer){
+        console.log("correct!");
+    } else {
+        console.log("incorrect!");
+    }
 }
