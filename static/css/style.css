@@ -1,3 +1,5 @@
+/* Header */
+
 .fas {
     font-size: 5rem;
 }
@@ -8,4 +10,21 @@ button {
     margin: 1rem;
     background: transparent;
     border: none;
+}
+
+/* Answer box */
+
+#answer-box {
+    margin-top: 4rem;
+    font-size: 3.5rem;
+}
+
+#answer {
+    width: 100%;
+}
+
+button[type=submit]{
+    border: 1px solid green;
+    border-radius: 20px;
+    width: auto;
 }
