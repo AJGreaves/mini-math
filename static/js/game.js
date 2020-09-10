@@ -51,12 +51,3 @@ function checkAnswer() {
         document.getElementById('error-msg').innerHTML = "Incorrect!";
     }
 }
-
-function checkIfAnswerIsNum(answer) {
-    if (isNaN(answer)) {
-        document.getElementById('error-msg').innerHTML = "Please enter a number";
-        return false;
-    } else {
-        return true;
-    }
-}
