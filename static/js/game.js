@@ -1,6 +1,6 @@
 /**
- * Function for when addition is selected by the user.
- * Loads numbers and answer window
+ * Function for when addition mode is selected by the user.
+ * Loads numbers into answer window
  */
 function selectAddition() {
     console.log("add button clicked");
@@ -9,6 +9,7 @@ function selectAddition() {
 
 /* Add event listeners */
 document.getElementById('addition-btn').addEventListener('click', selectAddition);
+document.getElementById('submit-btn').addEventListener('click', checkAnswer);
 
 /**
  * Function loads two random numbers into the answer box
@@ -29,4 +30,9 @@ function loadRandomNumbers() {
  */
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
+}
+
+function checkAnswer() {
+    let answer = document.getElementById('answer').value;
+    console.log(answer);
 }
